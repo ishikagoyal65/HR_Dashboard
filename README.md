@@ -16,7 +16,7 @@ JsonPowerDB is a Real-time, High Performance, Lightweight and Simple to Use, Res
 ## Pages with screenshots & functionalities
 ### Logged-out Pages
 
--Login Page - Allows existing users to log in to their account.
+ -Login Page - Allows existing users to log in to their account.
 ![Screenshot 2024-08-05 165748](https://github.com/user-attachments/assets/42d3a8f9-291b-4828-877c-7a0b138b7906)
 
 
