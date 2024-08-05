@@ -20,6 +20,7 @@ JsonPowerDB is a Real-time, High Performance, Lightweight and Simple to Use, Res
 ![Screenshot 2024-08-05 165748](https://github.com/user-attachments/assets/42d3a8f9-291b-4828-877c-7a0b138b7906)
 
 
+
 -Register Page - Provides a form for new users to register for an account.
 ![Screenshot 2024-08-05 165803](https://github.com/user-attachments/assets/5f641e36-71a2-4134-9103-ea964c24f150)
 
