@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title> Login </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content ="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            var myStatus = "out";
+        </script>
+        <script type="text/javascript" src="resources/js/jpdb-commons.js">
+        </script>
+        <script type="text/javascript" src="resources/js/common-js.js"></script>
+        <script type="text/javascript" src="resources/js/login.js"></script>
+        <link rel="stylesheet" href="resources/css/common-css.css">
+        <script>checkSession();</script>
+    </head>
+    <body>
+        <div class="container">  
+            <nav class="navbar navbar-inverse" style="margin-top:20px">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                    <li><a href="forget-password.html"><span class="glyphicon glyphicon-lock"></span> Forgot Password</a></li>
+                </ul>
+            </nav>
+            <div class="page-header text-center" > 
+                <h2>Login </h2> 
+            </div> 
+            <form class="form-horizontal" id="email" method="post"> 
+                <div class="form-group"> 
+                    <label class="control-label col-sm-2" >Email Address</label> 
+                    <div class="col-sm-5"> 
+                        <input type="email" class="form-control" id="eadd" placeholder="Enter email address" name="eadd"> 
+                    </div> 
+                </div> 
+                <div class="form-group"> 
+                    <label class="control-label col-sm-2" >Password</label> 
+                    <div class="col-sm-5"> 
+                        <input type="password" class="form-control" id="pass" placeholder="Enter password" name="pass"> 
+                    </div> 
+                </div> 
+                <div class="form-group"> 
+                    <div class="col-lg-offset-2 col-lg-10"> 
+                        <button type="button" class="btn btn-primary" id="login" 
+                                onclick="checkUser()">Login</button> 
+                    </div>
+                </div>
+            </form>
+            <center>
+                <div style="margin-top:550px" id="footer" class="col-sm-12"></div> 
+            </center>
+        </div> 
+        <script>loadHeader(); loadFooter();</script>
+    </body>
+</html>

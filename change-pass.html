@@ -1,0 +1,61 @@
+<html lang="en"> 
+    <head> 
+        <title>Change- Password</title> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <script 
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            var myStatus = "in";
+            var myName = "change";</script>
+        <script type="text/javascript" src="resources/js/jpdb-commons.js"></script> 
+        <script type="text/javascript" src="resources/js/common-js.js"></script>
+        <script type="text/javascript" src="resources/js/change-password.js"></script>
+        <link rel="stylesheet" href="resources/css/common-css.css">
+        <script>checkSession();</script>
+    </head> 
+    <body> 
+        <div id="header"></div>
+        <div class="container"> 
+            <div class="page-header text-center" > 
+                <h2>Change Password</h2> 
+            </div> 
+            <form class="form-horizontal" id="email" method="post"> 
+                <div class="form-group"> 
+                    <label class="control-label col-sm-2" >Old Password</label> 
+                    <div class="col-sm-5"> 
+                        <input type="password" class="form-control" id="oldpass" placeholder="Enter old password" name="oldpass" onchange="checkOldPassword()" > 
+                    </div> 
+                </div> 
+                <div class="form-group"> 
+                    <label class="control-label col-sm-2" >New Password</label> 
+                    <div class="col-sm-5"> 
+                        <input type="password" class="form-control" id="pass" placeholder="Enter new password" name="pass"> 
+                    </div> 
+                </div> 
+                <div class="form-group"> 
+                    <label class="control-label col-sm-2" >Re-type Password</label> 
+                    <div class="col-sm-5"> 
+                        <input type="password" class="form-control" id="repass" placeholder="Enter password" name="repass"> 
+                    </div> 
+                </div> 
+                <div class="form-group"> 
+                    <div class="col-lg-offset-2 col-lg-10"> 
+                        <button type="button" class="btn btn-primary" id="submit" 
+                                onclick="changePass()">Change Password</button> 
+
+                    </div>
+
+                </div>
+
+            </form>
+            <center>
+                <div style="margin-top:385px" id="footer" class="col-sm-12"></div> 
+            </center>
+        </div> 
+
+        <script>loadHeader(); loadFooter();</script>
+
+    </body>
+</html>
